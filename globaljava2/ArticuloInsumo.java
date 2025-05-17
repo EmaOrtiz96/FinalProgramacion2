@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author emanu
  */
-public class ArticuloInsumo {
+public class ArticuloInsumo extends Articulo {
     private Double precioCompra;
     private Integer stockActual;
     private Integer stockMaximo;

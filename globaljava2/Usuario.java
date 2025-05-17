@@ -11,5 +11,5 @@ package com.mycompany.globaljava2;
 public class Usuario {
     private String auth0Id;
     private String username;
-    private Renzo renzo;
+    
 }

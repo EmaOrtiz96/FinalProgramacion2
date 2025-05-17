@@ -4,16 +4,17 @@
  */
 package com.mycompany.globaljava2;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
  * @author emanu
  */
-public class Articulo {
+public abstract class Articulo {
     protected String denominacion;
     protected Double precioVenta;
-    protected List<Imagen> imagenenes;
+   protected List<Imagen> imagenes = new ArrayList<>();
     protected UnidadMedida UnidadMedida;
 
     public Articulo() {
@@ -22,7 +23,7 @@ public class Articulo {
     public Articulo(String denominacion, Double precioVenta, List<Imagen> imagenenes, UnidadMedida UnidadMedida) {
         this.denominacion = denominacion;
         this.precioVenta = precioVenta;
-        this.imagenenes = imagenenes;
+        this.imagenes = imagenenes;
         this.UnidadMedida = UnidadMedida;
     }
 
@@ -42,13 +43,7 @@ public class Articulo {
         this.precioVenta = precioVenta;
     }
 
-    public List<Imagen> getImagenenes() {
-        return imagenenes;
-    }
-
-    public void setImagenenes(List<Imagen> imagenenes) {
-        this.imagenenes = imagenenes;
-    }
+    
 
     public UnidadMedida getUnidadMedida() {
         return UnidadMedida;
@@ -57,5 +52,10 @@ public class Articulo {
     public void setUnidadMedida(UnidadMedida UnidadMedida) {
         this.UnidadMedida = UnidadMedida;
     }
+    public void addImagen(Imagen imagen) {
+    imagenes.add(imagen);
+    }
+
     
-}
+    }
+

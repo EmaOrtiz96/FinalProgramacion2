@@ -20,7 +20,7 @@ public class Promocion {
     private LocalTime HoraHasta;
     private String descripcionDescuento;
     private Double precioPromocional;
-    private tipoPromocion tipoPromocion;
+    private TipoPromocion tipoPromocion;
     private List<Imagen> imagenes;
     private Articulo articulo;
     

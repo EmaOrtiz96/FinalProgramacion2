@@ -11,6 +11,28 @@ package com.mycompany.globaljava2;
 public class Globaljava2 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+       Imagen imagenArticulo = new Imagen("www.com");
+       
+       UnidadMedida unidadMedida1 = new UnidadMedida ("kilogramo");
+       
+       Articulo.addImagen(imagenArticulo);
+       
+       ArticuloManuFacturado articuloManuFacturado1 = new ArticuloManuFacturado ("biscochuelo",50.50,imagenArticulo,unidadMedida1,"con chocolate", 30,"preparacion + horno");
+        System.out.println(imagenArticulo);
+        System.out.println(unidadMedida1);
+        
+
+
+
+
+
+
+
+
+//Articulo articulo1 = new Articulo();
+       // Articulo articulo2 = new Articulo();
+        
     }
+    
 }
